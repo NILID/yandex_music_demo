@@ -1,5 +1,5 @@
-# Yandex_music demo app
+# Yandex_music demo
 
-Geneus is a Ruby on Rails based genealogy application that operates on the wiki principle: all users edit the same record for an individual.
+There is a demo of yandex_music gem work [running on Heroku](https://yandex-music-example.herokuapp.com/).
 
-There is a demo  [running on Heroku](https://geneus.herokuapp.com/). Please feel free to explore.
+Yandex_music gem [github page](https://github.com/NILID/yandex_music).
