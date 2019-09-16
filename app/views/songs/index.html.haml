@@ -1,0 +1,15 @@
+%section.fdb-block.yellow
+  .container
+    .row.align-items-center.justify-content-center
+      .col-auto
+        %h2 Add your favorite song
+      .col-auto.mt-4.mt-sm-0
+        = link_to 'New Song', new_song_path, class: 'btn btn-primary'
+
+= render @songs
+
+%section.fdb-block
+  .container
+    .row.align-items-center.justify-content-center
+      .col-auto
+        = raw pagy_bootstrap_nav(@pagy)

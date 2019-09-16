@@ -1,0 +1,18 @@
+%section.fdb-block
+  .container
+    .row.justify-content-center
+      .col.text-center
+        = form_for(@song, html: { class: 'fdb-box fdb-touch' }) do |f|
+          .row
+            .col
+              %h2= form_title
+          = render 'application/errors', object: @song
+
+          .row.mt-4
+            .col
+              = f.text_area :url, autofocus: true, autocomplete: "url", class: 'form-control', placeholder: "Song's yandex url (for example: https://music.yandex.ru/album/3152547/track/33332882)"
+
+          .row.mt-4
+            .col
+              = f.submit 'Save', class: 'btn btn-secondary'
+              = link_to 'Back', :back, class: 'btn btn-outline-secondary'
